@@ -10,8 +10,6 @@
 <link href="{{URL::asset('assets/plugins/sidebar/sidebar.css')}}" rel="stylesheet">
 <!-- Sidemenu css -->
 <link rel="stylesheet" href="{{URL::asset('assets/css-rtl/sidemenu.css')}}">
-{{-- toastr notify --}}
-<link rel="stylesheet" href="{{ asset('assets/css/toastr.css') }}">
 @yield('css')
 <!--- Style css -->
 <link href="{{URL::asset('assets/css-rtl/style.css')}}" rel="stylesheet">
@@ -19,3 +17,7 @@
 <link href="{{URL::asset('assets/css-rtl/style-dark.css')}}" rel="stylesheet">
 <!---Skinmodes css-->
 <link href="{{URL::asset('assets/css-rtl/skin-modes.css')}}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+<!--Internal   Notify -->
+<link href="{{ URL::asset('assets/plugins/notify/css/notifIt.css') }}" rel="stylesheet" />
+<script src="{{ asset('js/app.js') }} " defer ></script>

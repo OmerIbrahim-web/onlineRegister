@@ -34,6 +34,7 @@
 				<!-- /breadcrumb -->
 @endsection
 @section('content')
+@include('errors.exceptions')
 				<!-- row -->
 				<div class="row row-sm">
 					<div class="col-xl-3 col-lg-6 col-md-6 col-xm-12">
@@ -80,6 +81,7 @@
 							<span id="compositeline2" class="pt-1">3,2,4,6,12,14,8,7,14,16,12,7,8,4,3,2,2,5,6,7</span>
 						</div>
 					</div>
+					
 					<div class="col-xl-3 col-lg-6 col-md-6 col-xm-12">
 						<div class="card overflow-hidden sales-card bg-success-gradient">
 							<div class="pl-3 pt-3 pr-3 pb-2 pt-0">

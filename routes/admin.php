@@ -27,13 +27,22 @@ Route::middleware([
         Route::post('permissions/deleteAll', [PermissionController::class, 'deleteAll'])->name('deleteAll');
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     });
+    
+    ############################Settings routes###############################
+    Route::controller(App\Http\Controllers\admin\users\SettingsController::class)->group(function(){
+        Route::get('settings/dark_mode_on', 'dark_mode_on')->name('settings.dark_mode_on');
+        Route::get('settings/dark_mode_off', 'dark_mode_off')->name('settings.dark_mode_off');
+        Route::post('setting/changePassword/{id}', 'changePassword')->name('settings.changePassword');
+    }); 
+
+    Route::get('/{page}', 'AdminController@index');
 });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
 
-Route::get('/{page}', 'AdminController@index');
+
