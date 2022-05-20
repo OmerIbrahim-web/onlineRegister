@@ -8,10 +8,14 @@
 							<ul class="ah-actions actions align-items-center">
 								<li>
 									<div class="row">
-										<a href=""  class="col" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true"><i class="si si-close text-white"></i></span>
-										</a>
-										<h5 class="col" style="color: aliceblue">fjslfjs</h5>
+										<div class="col">
+											<a href=""  class="" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true"><i class="si si-close text-white"></i></span>
+											</a>
+										</div>
+										<div class="col">
+											<h5 class="" style="color: aliceblue; width:150px">تغيير كلمة المرور</h5>
+										</div>
 									</div>
 								</li>
 							</ul>
